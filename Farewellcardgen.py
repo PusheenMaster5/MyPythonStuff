@@ -1,10 +1,16 @@
 #Farewell Card Generator (For CMS) 3 lines
-#add support for people going to the same school as you
+#add support for people going to the same school as you later
+#License stuffs
+License = '''Farewell Card Generator for the AP students of Chesapeake Montessori School
+Distributed under the Modzilla Public License V.2.0
+Created By Justin McCubbin
+Dedicated to Hamza Nasher, because you can dedicate code to people now, too (I guess)?'''
+print (License,'\n'*2)
 MyName = input('What is your name? ')
 TheirName = input('Who are you writing to? ')
-MyGrade = input('What is your grade? (7,8) ')
+MyGrade = input('What is your grade? (7, 8) ')
 TheirGrade = input('What is {}\'s grade? '.format(TheirName))
-Knowledge = input('Did you know them before? (y,n) ')
+Knowledge = input('Did you know them before? (y, n) ')
 Line2 = input('Sentence about you and {}\'s time together. (eg: I enjoyed building a town with you.) '.format(TheirName))
 #if you are new or dont know anybody, it says you get to know them, otherwise, you are 'reconnecting' with them
 if TheirGrade == '7' and Knowledge == 'n':
