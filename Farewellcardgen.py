@@ -14,7 +14,7 @@ TeacherStat = input('Are they a teacher? ')
 if TeacherStat == 'y':
     if MyGrade == '7':
         Line1 = 'It was great getting to know you this year!'
-        Line3 = 'See you next year'
+        Line3 = 'See you next year.'
     elif MyGrade == '8':
         Line1 = 'It was great seeing you again this year.'
         Line3 = 'Hope to see you again.'
