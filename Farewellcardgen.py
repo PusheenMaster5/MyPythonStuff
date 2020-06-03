@@ -1,8 +1,12 @@
 #Farewell Card Generator (For CMS) 3 lines
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 #add support for people going to the same school as you
 =======
 #add support for people going to the same school as you in 8th grade later (done)
+=======
+#add support for people going to the same school as you later  (done)
+>>>>>>> Stashed changes
 #License stuffs
 import sys
 License = '''Farewell Card Generator for the AP students of Chesapeake Montessori School
@@ -16,9 +20,14 @@ TheirName = input('Who are you writing to? ')
 MyGrade = input('What is your grade? (7,8) ')
 TheirGrade = input('What is {}\'s grade? '.format(TheirName))
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Knowledge = input('Did you know them before? (y,n) ')
 =======
 Knowledge = input('Did you know them before this year? (y, n) ')
+SameSchool = input('Are you going to go to the same High School as them? ')
+>>>>>>> Stashed changes
+=======
+Knowledge = input('Did you know them before? (y, n) ')
 SameSchool = input('Are you going to go to the same High School as them? ')
 >>>>>>> Stashed changes
 Line2 = input('Sentence about you and {}\'s time together. (eg: I enjoyed building a town with you.) '.format(TheirName))
@@ -43,8 +52,11 @@ elif MyGrade == '8' and TheirGrade == '8' and SameSchool == 'y':
 elif MyGrade == '8' and TheirGrade == '8' and SameSchool == 'n':
     Line3 = 'Hope you do well in High School.'
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 print (f'Hi {TheirName},\n{Line1}  {Line2}  {Line3}  \nAll the best, {MyName}')
 =======
+=======
+>>>>>>> Stashed changes
 #saves output (Data) to a txt file (TheirName.txt)
 Data = (f'Hi {TheirName},\n{Line1}  {Line2}  {Line3}  \nAll the best, {MyName}')
 Datafile = open(f'{TheirName}data.txt', 'w')
@@ -52,4 +64,7 @@ Datafile.write(Data)
 Datafile.close()
 print (Data)
 sys.exit()
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
