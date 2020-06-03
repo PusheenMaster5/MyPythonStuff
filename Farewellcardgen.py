@@ -1,5 +1,5 @@
 #Farewell Card Generator (For CMS) 3 lines
-#add support for people going to the same school as you later
+#add support for people going to the same school as you later  (done)
 #License stuffs
 import sys
 License = '''Farewell Card Generator for the AP students of Chesapeake Montessori School
@@ -12,6 +12,7 @@ TheirName = input('Who are you writing to? ')
 MyGrade = input('What is your grade? (7, 8) ')
 TheirGrade = input('What is {}\'s grade? '.format(TheirName))
 Knowledge = input('Did you know them before? (y, n) ')
+SameSchool = input('Are you going to go to the same High School as them? ')
 Line2 = input('Sentence about you and {}\'s time together. (eg: I enjoyed building a town with you.) '.format(TheirName))
 #if you are new or dont know anybody, it says you get to know them, otherwise, you are 'reconnecting' with them
 if TheirGrade == '7' and Knowledge == 'n':
@@ -27,7 +28,11 @@ elif TheirGrade == '8' and Knowledge == 'y':
     
 if TheirGrade == '7':
     Line3 = 'See you next year.'
-else:
+elif MyGrade == '7' and TheirGrade == '8':
+    Line3 = 'Hope you do well in High School.'
+elif MyGrade == '8' and TheirGrade == '8' and SameSchool == 'y':
+    Line3 = 'See you in High School.'
+elif MyGrade == '8' and TheirGrade == '8' and SameSchool == 'n':
     Line3 = 'Hope you do well in High School.'
 #saves output (Data) to a txt file (TheirName.txt)
 Data = (f'Hi {TheirName},\n{Line1}  {Line2}  {Line3}  \nAll the best, {MyName}')
